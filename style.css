@@ -78,7 +78,6 @@ ul li>a:hover{
     margin-left:5%;
     margin-right:5%;
     margin-top:50px;
-    border:1px solid red;
     
 }
 
@@ -92,13 +91,141 @@ ul li>a:hover{
     flex-grow: 4;
     gap:20px;
     background-color: #e7e5e53a ;
-    backdrop-filter: blur(2px);
-    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+
 }
 
-.search, .data , .region{
-    border:1px solid black;
+.search-description, .region-description, .data-description{
+    margin-bottom:20px;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.767);
+}
 
+.d1 form{
+    /* background: #A3D0C3; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.d1 input {
+  width: 80%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #e7e5e53a ;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: inset 2px 2px 5px rgb(154, 147, 140), 1px 1px 5px rgba(255, 255, 255, 1);
+  background-color: #e7e5e53a ;
+  backdrop-filter: blur(5px);
+  color: #9E9C9C;
+}
+.d1 button{
+  position: relative; 
+  top: 0px;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #e7e5e53a;
+  border: 2px solid #e7e5e53a;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 2px 2px 5px rgb(154, 147, 140), 1px 1px 5px rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #050505;
+}
+.d1{
+    margin-top: 10px;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+.region .d2>form>p>input{
+  cursor: pointer;
+}
+
+
+
+.d2 select {
+    width: 70%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #e7e5e53a ;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgb(154, 147, 140), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-color: #e7e5e53a ;
+    backdrop-filter: blur(5px);
+    color: #9E9C9C;
+}
+
+.d2 input{
+    border: 2px solid #e7e5e53a ;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgb(154, 147, 140), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-color: #e7e5e53a ;
+    color: #9E9C9C;
+    width: 30%;
+    height: 42px;
+}
+
+.search{
+    justify-content: space-between;
+    /* background-color: #e7e5e53a ;
+    backdrop-filter: blur(5px); */
+    padding:10px;
+    border-radius: 8px;
+}
+
+.region{
+ display:flex;
+ flex-direction:column;
+    justify-content: space-between;
+    /* background-color: #e7e5e53a ;
+    backdrop-filter: blur(5px); */
+    padding:10px;
+    border-radius: 8px;
+}
+
+
+.data{
+display:flex;
+flex-direction:column;
+justify-content: space-between;
+/* background-color: #e7e5e53a ;
+backdrop-filter: blur(5px); */
+padding:10px;
+border-radius: 8px;
+}
+
+.data .input-label label>input[type="text"]{
+    border: 2px solid #e7e5e53a ;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgb(154, 147, 140), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-color: #e7e5e53a ;
+    color: #9E9C9C;
+    width: 68%;
+    height: 42px;
+    padding-left: 10px;
+}
+
+.data .input-label label>input[type="submit"]{
+    border: 2px solid #e7e5e53a ;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgb(154, 147, 140), 1px 1px 5px rgba(255, 255, 255, 1);
+    background-color: #e7e5e53a ;
+    color: #9E9C9C;
+    width: 30%;
+    height: 42px; 
 }
 
 /* -----------------------------item2-shop--------------------------------------------- */
