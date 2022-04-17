@@ -14,7 +14,7 @@ body{
 header {
     margin-top:20px;
     background-color: #e7e5e53a ;
-    padding:20px;
+    padding:10px;
     /* box-shadow: 5px 2px 7px #d1d1d1; */
     border-radius: 30px;
     margin-left:20px;
@@ -226,6 +226,7 @@ border-radius: 8px;
     color: #9E9C9C;
     width: 30%;
     height: 42px; 
+    cursor: pointer;
 }
 
 /* -----------------------------item2-shop--------------------------------------------- */
@@ -259,11 +260,6 @@ border-radius: 8px;
     -o-transform: scale(1.02) rotate(0.2deg);
     -ms-transform: scale(1.02) rotate(0.2deg);
     transform: scale(1.02) rotate(0.2deg);
-}
-
-
-.card img{
-    border-radius: 10px 10px 0px 0px;
 }
 
 .card{
