@@ -132,7 +132,7 @@
             $.ajax({
               method: "POST",
               url: "some.php",
-              data: { email: emailValue, nameCompany:nameCompanyValue, login: loginValue, name: nameValue, surname:surnameValue , tin:tinValue,  password: passwordValue  }
+              data: { 'email': emailValue, 'nameCompany':nameCompanyValue, 'login': loginValue, 'name': nameValue, 'surname':surnameValue , 'tin':tinValue,  'password': passwordValue  }
             })
               .done(function( msg ) {
                 alert( "Data Saved: " + msg );
