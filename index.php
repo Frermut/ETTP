@@ -1,91 +1,100 @@
-<?php include 'header.php' ?>
-
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/rotating-slider.css">
+ 
+    
+</head>
 <body>
     <header>
-        <div class="container header-container">
+        <div class="header-container">
             <a href="#" class="logo">ЭТТП</a>
             <ul>
-              <li><a href="">Главная</a></li>
-              <li><a href="">Торги</a></li>
-              <li><a href="">О Компании</a></li>
-              <li><a href="register/register.php">Регистрация</a></li>
-              <li><a href="" class="header-btn">Вход</a></li>
-              <li><a href=""></a></li>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Торги</a></li>
+                <li><a href="">О Компании</a></li>
+                <li><a href="register/register.html">Регистрация</a></li>
+                <li><a href=""></a></li>
             </ul>
-          </div>
-    </header>
-
-<!-- ------------------------------------------------------------------------------------- -->
-
-    <section>
-        <div class="container filter-and-shop" id="block_lots">
-
-<!-- ------------------------------------------------------------------------------------- -->   
-
-            <div class="item1-filter">
-                <div class="search">
-                    <div class="search-description">
-                        <p>Поиск по ключевым словам:</p>
-                    </div>
-                    <div class="d1">
-                        <form>
-                        <input  type="search" id="search" placeholder="Search..." >
-                        <button type="submit"></button>
-                        </form>
-                      </div>
-                </div>
-               
-                
-                    <div class="region">
-                        <div class="region-description">
-                        <p>Сортировка по региону:</p>
-                        </div>
-                        <div class="d2">
-                            <form>
-                                <p>
-                                    <select name="regionid" >
-                                        <option value="s1">Брянская обл.</option>
-                                        <option value="s2" selected>Московская обл.</option>
-                                        <option value="s3">Калужская обл.</option>
-                                        <option value="s4">Республика Ялта</option>
-                                        <option value="s5">Республика Ялта</option>
-                                        <option value="s6">Республика Ялта</option>
-                                        <option value="s7">Республика Ялта</option>
-                                        <input type="submit" value="Принять" />
-                                    </p>
-                                </select> 
-                            </form> 
-                        </div>
-                    </div>
-                
-
-                <div class="data">
-                    <div class="input-label">
-                        <label>
-                            <div class="data-description">
-                                <p>Сортировка по дате:</p>
-                            </div>
-                            <input type="text" id="datepicker" value="Выбрать дату:">
-                            <input type="submit" value="Принять" />
-                        </label>
-                      </div>
-                </div>
-
-            </div>
-
-<!-- ------------------------------------------------------------------------------------- -->
-
-            <div class="item2-shop">
-
-
-
-            </div>
         </div>
-    </section>
+    </header>
+       
+
+<section>
+    <div class="text">
+            <span>Электронное</span> 
+            <span>Торговое Пространство</span> 
+            <span>для Производственных</span> 
+            <span>Предприятий</span>
+    </div>
+
+</section>
 
 
 
+<!-- <div class="rotating-slider-container">
+    <div class="rotating-slider">
+        <ul class="slides">
+            <li style="background-image: url(img/cassettetape-mockup-02.jpg);">
+                <div class="slide-inner">
+                    <div>Bayonetta</div>
+                    <p>Bayonetta</p>
+                </div>
+            </li>        
+            <li style="background-image: url(img/cassettetape-mockup-02.jpg);">
+                <div class="slide-inner">
+                    <div>Lara Croft</div>
+                    <p>Tomb Rider</p>
+                </div>        
+            </li>
+            <li style="background-image: url(img/cassettetape-mockup-02.jpg);">
+                <div class="slide-inner">
+                    <div>Aloy</div>
+                    <p>Horizon Zero Dawn</p>
+                </div>        
+            </li>
+            <li style="background-image: url(img/cassettetape-mockup-02.jpg);">
+                <div class="slide-inner">
+                    <div>Ada Wong</div>
+                    <p>Resident Evil</p>
+                </div>    
+            </li>            
+            <li style="background-image: url(img/cassettetape-mockup-02.jpg);">
+                <div class="slide-inner">
+                    <div>Senua</div>
+                    <p>Hellblade</p>
+                </div>
+            </li>
+            <li style="background-image: url(img/cassettetape-mockup-02.jpg);">
+                <div class="slide-inner">
+                    <div>Kat</div>
+                    <p>Devil May Cry</p>
+                </div>
+            </li>        
+        </ul>
+    </div>
+</div> -->
 
-<?php include 'footer.php' ?>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="dist/jquery.rotating-slider.js"></script>
+<script>
+    $(function(){ 
+        $('.rotating-slider').rotatingSlider({
+            slideHeight : Math.min(360, window.innerWidth -80),
+            slideWidth : Math.min(480, window.innerWidth - 80),
+            afterRotationStart: function(){
+                console.log('Rotating to slide '+($('.rotating-slider .active-slide').index() + 1));
+            }
+        });
+    });
+</script>
+</script>
+</body>
+</html>
