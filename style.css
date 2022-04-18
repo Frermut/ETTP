@@ -6,14 +6,14 @@
 }
 
 body{
-    background-image: url(img/white.jpg);
+    background-color:rgb(82, 82, 82);
     background-attachment: fixed;
     background-size:cover;
 }
 
 header {
     margin-top:20px;
-    background-color: #e7e5e53a ;
+    /* background-color: #e7e5e53a ; */
     padding:10px;
     /* box-shadow: 5px 2px 7px #d1d1d1; */
     border-radius: 30px;
