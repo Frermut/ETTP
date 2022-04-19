@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,9 +48,6 @@
               </div>
         
               <div class="inputContainer">
-<<<<<<< HEAD
-                <input type="password" method="post" class="input" placeholder="a">
-=======
                 <input 
                 type="text" 
                 class="nameTitle" 
@@ -95,7 +92,6 @@
                 placeholder="a" 
                 minlength="8"  
                 required>
->>>>>>> 03b05ff9d12d1adc189343e2767d11fa17ed05d0
                 <label for="" class="label">Пароль</label>
               </div>
         
@@ -113,9 +109,10 @@
                 <label for="" class="label">Подтвердите пароль</label>
               </div>
         
-              <input type="submit" class="submitBtn" value="Вход">
+              <input type="submit" class="submitBtn" value="Зарегистрироваться">
 
-              <a href="">Вернуться на главную</a>
+              <a href="../index.html" style="display:block;">Вернуться на главную</a>
+              <a href="../signin/signin.php">Войти</a>
             </div>
           </div>
     </main>
